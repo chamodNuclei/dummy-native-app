@@ -66,6 +66,5 @@ const BottomNavigation = () => {
     </Tab.Navigator>
   );
 };
-//nipunika.v@sliit.lk
 
 export default BottomNavigation;

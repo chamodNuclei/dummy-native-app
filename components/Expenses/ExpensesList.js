@@ -3,7 +3,7 @@ import {FlatList} from 'react-native';
 import ExpenseItem from './ExpenseItem';
 
 const renderExpensItem = itemData => {
-  return <ExpenseItem {...itemData.item} />;
+  return <ExpenseItem {...itemData.item}  />;
 };
 
 const ExpensesList = ({expenses}) => {
@@ -12,8 +12,9 @@ const ExpensesList = ({expenses}) => {
       data={expenses}
       renderItem={renderExpensItem}
       keyExtractor={item => {
-        item.id;
+         return item.id;
       }}
+      
     />
   );
 };

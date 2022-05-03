@@ -65,7 +65,8 @@ const ManageExpense = ({route, navigation}) => {
       <TextInput
         style={styles.input}
         onChangeText={onChangeText}
-        value={0}
+        value={''}
+        
         placeholder="Amount"
         keyboardType="numeric"
       />
@@ -128,7 +129,6 @@ const styles = StyleSheet.create({
     borderRadius:24,
     color:GlobalStyles.colors.primary100,
     borderColor:GlobalStyles.colors.primary100,
-    tintColor:'white',
     padding: 10,
   },
 });
